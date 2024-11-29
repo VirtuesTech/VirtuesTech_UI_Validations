@@ -17,7 +17,7 @@ const buttonColorMap = {
   '#FF963F': '#E57B28'
 };
 
-test.only('Validate headings and buttons for unique service URLs', async ({ page }) => {
+test('Validate headings and buttons for unique service URLs', async ({ page }) => {
   // Fetch unique service URLs dynamically
   const serviceUrls = await fetchUniqueServiceUrls(page);
 
